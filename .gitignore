@@ -1,0 +1,35 @@
+# Environnement Python
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Données téléchargées (Fashion-MNIST, IMDb…) — regénérées au 1er lancement
+data/
+
+# Sorties intermédiaires (regénérées par run_all_and_collect.py)
+outputs/
+
+# Logs locaux
+deliverables/last_run.log
+
+# Archives dupliquées (garder submission_final_new.zip si présent)
+deliverables/submission_final.zip
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Secrets
+.env
+*.pem

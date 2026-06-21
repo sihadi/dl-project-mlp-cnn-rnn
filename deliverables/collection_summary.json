@@ -1,0 +1,687 @@
+{
+  "parts": {
+    "part1_mlp": {
+      "part": "part1_mlp",
+      "status": "success",
+      "device": "cpu",
+      "best_variant": "sequential",
+      "best_strategy": "xavier",
+      "metrics": {
+        "part": "part1_mlp",
+        "device": "cpu",
+        "model_variants": [
+          "custom",
+          "sequential"
+        ],
+        "best_strategy": "xavier",
+        "best_variant": "sequential",
+        "validation_accuracy": 0.978021978021978,
+        "accuracy": 0.9473684210526315,
+        "precision": 0.9459459459459459,
+        "recall": 0.9722222222222222,
+        "f1_score": 0.958904109589041,
+        "strategy_results": [
+          {
+            "variant": "custom",
+            "strategy": "gaussian",
+            "val_accuracy": 0.967032967032967,
+            "model_path": "C:\\Users\\lenovo\\Downloads\\DL_Project_2\\dl_multi_agents_project\\outputs\\part1_mlp\\saved_models\\custom_gaussian.pt",
+            "parameter_summary": {
+              "named_parameters": [
+                {
+                  "name": "fc1.weight",
+                  "shape": [
+                    64,
+                    30
+                  ],
+                  "requires_grad": true,
+                  "numel": 1920
+                },
+                {
+                  "name": "fc1.bias",
+                  "shape": [
+                    64
+                  ],
+                  "requires_grad": true,
+                  "numel": 64
+                },
+                {
+                  "name": "fc2.weight",
+                  "shape": [
+                    32,
+                    64
+                  ],
+                  "requires_grad": true,
+                  "numel": 2048
+                },
+                {
+                  "name": "fc2.bias",
+                  "shape": [
+                    32
+                  ],
+                  "requires_grad": true,
+                  "numel": 32
+                },
+                {
+                  "name": "fc3.weight",
+                  "shape": [
+                    2,
+                    32
+                  ],
+                  "requires_grad": true,
+                  "numel": 64
+                },
+                {
+                  "name": "fc3.bias",
+                  "shape": [
+                    2
+                  ],
+                  "requires_grad": true,
+                  "numel": 2
+                }
+              ],
+              "state_dict_keys": [
+                "fc1.weight",
+                "fc1.bias",
+                "fc2.weight",
+                "fc2.bias",
+                "fc3.weight",
+                "fc3.bias"
+              ],
+              "total_params": 4130,
+              "trainable_params": 4130
+            }
+          },
+          {
+            "variant": "custom",
+            "strategy": "constant",
+            "val_accuracy": 0.967032967032967,
+            "model_path": "C:\\Users\\lenovo\\Downloads\\DL_Project_2\\dl_multi_agents_project\\outputs\\part1_mlp\\saved_models\\custom_constant.pt",
+            "parameter_summary": {
+              "named_parameters": [
+                {
+                  "name": "fc1.weight",
+                  "shape": [
+                    64,
+                    30
+                  ],
+                  "requires_grad": true,
+                  "numel": 1920
+                },
+                {
+                  "name": "fc1.bias",
+                  "shape": [
+                    64
+                  ],
+                  "requires_grad": true,
+                  "numel": 64
+                },
+                {
+                  "name": "fc2.weight",
+                  "shape": [
+                    32,
+                    64
+                  ],
+                  "requires_grad": true,
+                  "numel": 2048
+                },
+                {
+                  "name": "fc2.bias",
+                  "shape": [
+                    32
+                  ],
+                  "requires_grad": true,
+                  "numel": 32
+                },
+                {
+                  "name": "fc3.weight",
+                  "shape": [
+                    2,
+                    32
+                  ],
+                  "requires_grad": true,
+                  "numel": 64
+                },
+                {
+                  "name": "fc3.bias",
+                  "shape": [
+                    2
+                  ],
+                  "requires_grad": true,
+                  "numel": 2
+                }
+              ],
+              "state_dict_keys": [
+                "fc1.weight",
+                "fc1.bias",
+                "fc2.weight",
+                "fc2.bias",
+                "fc3.weight",
+                "fc3.bias"
+              ],
+              "total_params": 4130,
+              "trainable_params": 4130
+            }
+          },
+          {
+            "variant": "custom",
+            "strategy": "xavier",
+            "val_accuracy": 0.945054945054945,
+            "model_path": "C:\\Users\\lenovo\\Downloads\\DL_Project_2\\dl_multi_agents_project\\outputs\\part1_mlp\\saved_models\\custom_xavier.pt",
+            "parameter_summary": {
+              "named_parameters": [
+                {
+                  "name": "fc1.weight",
+                  "shape": [
+                    64,
+                    30
+                  ],
+                  "requires_grad": true,
+                  "numel": 1920
+                },
+                {
+                  "name": "fc1.bias",
+                  "shape": [
+                    64
+                  ],
+                  "requires_grad": true,
+                  "numel": 64
+                },
+                {
+                  "name": "fc2.weight",
+                  "shape": [
+                    32,
+                    64
+                  ],
+                  "requires_grad": true,
+                  "numel": 2048
+                },
+                {
+                  "name": "fc2.bias",
+                  "shape": [
+                    32
+                  ],
+                  "requires_grad": true,
+                  "numel": 32
+                },
+                {
+                  "name": "fc3.weight",
+                  "shape": [
+                    2,
+                    32
+                  ],
+                  "requires_grad": true,
+                  "numel": 64
+                },
+                {
+                  "name": "fc3.bias",
+                  "shape": [
+                    2
+                  ],
+                  "requires_grad": true,
+                  "numel": 2
+                }
+              ],
+              "state_dict_keys": [
+                "fc1.weight",
+                "fc1.bias",
+                "fc2.weight",
+                "fc2.bias",
+                "fc3.weight",
+                "fc3.bias"
+              ],
+              "total_params": 4130,
+              "trainable_params": 4130
+            }
+          },
+          {
+            "variant": "sequential",
+            "strategy": "gaussian",
+            "val_accuracy": 0.9560439560439561,
+            "model_path": "C:\\Users\\lenovo\\Downloads\\DL_Project_2\\dl_multi_agents_project\\outputs\\part1_mlp\\saved_models\\sequential_gaussian.pt",
+            "parameter_summary": {
+              "named_parameters": [
+                {
+                  "name": "net.0.weight",
+                  "shape": [
+                    64,
+                    30
+                  ],
+                  "requires_grad": true,
+                  "numel": 1920
+                },
+                {
+                  "name": "net.0.bias",
+                  "shape": [
+                    64
+                  ],
+                  "requires_grad": true,
+                  "numel": 64
+                },
+                {
+                  "name": "net.2.weight",
+                  "shape": [
+                    32,
+                    64
+                  ],
+                  "requires_grad": true,
+                  "numel": 2048
+                },
+                {
+                  "name": "net.2.bias",
+                  "shape": [
+                    32
+                  ],
+                  "requires_grad": true,
+                  "numel": 32
+                },
+                {
+                  "name": "net.4.weight",
+                  "shape": [
+                    2,
+                    32
+                  ],
+                  "requires_grad": true,
+                  "numel": 64
+                },
+                {
+                  "name": "net.4.bias",
+                  "shape": [
+                    2
+                  ],
+                  "requires_grad": true,
+                  "numel": 2
+                }
+              ],
+              "state_dict_keys": [
+                "net.0.weight",
+                "net.0.bias",
+                "net.2.weight",
+                "net.2.bias",
+                "net.4.weight",
+                "net.4.bias"
+              ],
+              "total_params": 4130,
+              "trainable_params": 4130
+            }
+          },
+          {
+            "variant": "sequential",
+            "strategy": "constant",
+            "val_accuracy": 0.967032967032967,
+            "model_path": "C:\\Users\\lenovo\\Downloads\\DL_Project_2\\dl_multi_agents_project\\outputs\\part1_mlp\\saved_models\\sequential_constant.pt",
+            "parameter_summary": {
+              "named_parameters": [
+                {
+                  "name": "net.0.weight",
+                  "shape": [
+                    64,
+                    30
+                  ],
+                  "requires_grad": true,
+                  "numel": 1920
+                },
+                {
+                  "name": "net.0.bias",
+                  "shape": [
+                    64
+                  ],
+                  "requires_grad": true,
+                  "numel": 64
+                },
+                {
+                  "name": "net.2.weight",
+                  "shape": [
+                    32,
+                    64
+                  ],
+                  "requires_grad": true,
+                  "numel": 2048
+                },
+                {
+                  "name": "net.2.bias",
+                  "shape": [
+                    32
+                  ],
+                  "requires_grad": true,
+                  "numel": 32
+                },
+                {
+                  "name": "net.4.weight",
+                  "shape": [
+                    2,
+                    32
+                  ],
+                  "requires_grad": true,
+                  "numel": 64
+                },
+                {
+                  "name": "net.4.bias",
+                  "shape": [
+                    2
+                  ],
+                  "requires_grad": true,
+                  "numel": 2
+                }
+              ],
+              "state_dict_keys": [
+                "net.0.weight",
+                "net.0.bias",
+                "net.2.weight",
+                "net.2.bias",
+                "net.4.weight",
+                "net.4.bias"
+              ],
+              "total_params": 4130,
+              "trainable_params": 4130
+            }
+          },
+          {
+            "variant": "sequential",
+            "strategy": "xavier",
+            "val_accuracy": 0.978021978021978,
+            "model_path": "C:\\Users\\lenovo\\Downloads\\DL_Project_2\\dl_multi_agents_project\\outputs\\part1_mlp\\saved_models\\sequential_xavier.pt",
+            "parameter_summary": {
+              "named_parameters": [
+                {
+                  "name": "net.0.weight",
+                  "shape": [
+                    64,
+                    30
+                  ],
+                  "requires_grad": true,
+                  "numel": 1920
+                },
+                {
+                  "name": "net.0.bias",
+                  "shape": [
+                    64
+                  ],
+                  "requires_grad": true,
+                  "numel": 64
+                },
+                {
+                  "name": "net.2.weight",
+                  "shape": [
+                    32,
+                    64
+                  ],
+                  "requires_grad": true,
+                  "numel": 2048
+                },
+                {
+                  "name": "net.2.bias",
+                  "shape": [
+                    32
+                  ],
+                  "requires_grad": true,
+                  "numel": 32
+                },
+                {
+                  "name": "net.4.weight",
+                  "shape": [
+                    2,
+                    32
+                  ],
+                  "requires_grad": true,
+                  "numel": 64
+                },
+                {
+                  "name": "net.4.bias",
+                  "shape": [
+                    2
+                  ],
+                  "requires_grad": true,
+                  "numel": 2
+                }
+              ],
+              "state_dict_keys": [
+                "net.0.weight",
+                "net.0.bias",
+                "net.2.weight",
+                "net.2.bias",
+                "net.4.weight",
+                "net.4.bias"
+              ],
+              "total_params": 4130,
+              "trainable_params": 4130
+            }
+          }
+        ]
+      },
+      "parameter_report": {
+        "named_parameters": [
+          {
+            "name": "net.0.weight",
+            "shape": [
+              64,
+              30
+            ],
+            "requires_grad": true,
+            "numel": 1920
+          },
+          {
+            "name": "net.0.bias",
+            "shape": [
+              64
+            ],
+            "requires_grad": true,
+            "numel": 64
+          },
+          {
+            "name": "net.2.weight",
+            "shape": [
+              32,
+              64
+            ],
+            "requires_grad": true,
+            "numel": 2048
+          },
+          {
+            "name": "net.2.bias",
+            "shape": [
+              32
+            ],
+            "requires_grad": true,
+            "numel": 32
+          },
+          {
+            "name": "net.4.weight",
+            "shape": [
+              2,
+              32
+            ],
+            "requires_grad": true,
+            "numel": 64
+          },
+          {
+            "name": "net.4.bias",
+            "shape": [
+              2
+            ],
+            "requires_grad": true,
+            "numel": 2
+          }
+        ],
+        "state_dict_keys": [
+          "net.0.weight",
+          "net.0.bias",
+          "net.2.weight",
+          "net.2.bias",
+          "net.4.weight",
+          "net.4.bias"
+        ],
+        "total_params": 4130,
+        "trainable_params": 4130
+      },
+      "confusion_png": "C:\\Users\\lenovo\\Downloads\\DL_Project_2\\dl_multi_agents_project\\outputs\\part1_mlp\\figures\\confusion_matrix.png",
+      "metrics_summary_png": "C:\\Users\\lenovo\\Downloads\\DL_Project_2\\dl_multi_agents_project\\outputs\\part1_mlp\\figures\\metrics_summary.png",
+      "initialization_png": "C:\\Users\\lenovo\\Downloads\\DL_Project_2\\dl_multi_agents_project\\outputs\\part1_mlp\\figures\\initialization_comparison.png",
+      "lime_png": "C:\\Users\\lenovo\\Downloads\\DL_Project_2\\dl_multi_agents_project\\outputs\\part1_mlp\\figures\\lime_explanation.png",
+      "lime_html": "C:\\Users\\lenovo\\Downloads\\DL_Project_2\\dl_multi_agents_project\\outputs\\part1_mlp\\figures\\lime_explanation.html",
+      "train_summary": {
+        "part": "part1_mlp",
+        "status": "success",
+        "best_strategy": "xavier",
+        "best_variant": "sequential",
+        "accuracy": 0.9473684210526315,
+        "output_dir": "C:\\Users\\lenovo\\Downloads\\DL_Project_2\\dl_multi_agents_project\\outputs\\part1_mlp"
+      }
+    },
+    "part2_cnn": {
+      "part": "part2_cnn",
+      "status": "success",
+      "device": "cpu",
+      "manual_examples": "C:\\Users\\lenovo\\Downloads\\DL_Project_2\\dl_multi_agents_project\\outputs\\part2_cnn\\part2_cnn\\analysis\\manual_calculations.json",
+      "comparison": "C:\\Users\\lenovo\\Downloads\\DL_Project_2\\dl_multi_agents_project\\outputs\\part2_cnn\\part2_cnn\\analysis\\comparison.json",
+      "report": "C:\\Users\\lenovo\\Downloads\\DL_Project_2\\dl_multi_agents_project\\outputs\\part2_cnn\\part2_cnn\\analysis\\report.md",
+      "comparison_metrics": {
+        "MLP": {
+          "accuracy": 0.681,
+          "precision": 0.6900738938682702,
+          "recall": 0.6763902449946946,
+          "f1_score": 0.6493745309816658
+        },
+        "CNN": {
+          "accuracy": 0.76,
+          "precision": 0.7811567347097412,
+          "recall": 0.7666448668151813,
+          "f1_score": 0.7679066576629683
+        }
+      },
+      "ablation_results": [
+        {
+          "name": "baseline",
+          "accuracy": 0.738,
+          "precision": 0.7423218452980075,
+          "recall": 0.7384709050118857,
+          "f1_score": 0.7340659540932772,
+          "params": {
+            "num_filters": 16,
+            "padding": 1,
+            "stride": 1,
+            "pool_type": "max",
+            "use_1x1": false
+          }
+        },
+        {
+          "name": "no_padding",
+          "accuracy": 0.722,
+          "precision": 0.7453227985280438,
+          "recall": 0.7252197543251813,
+          "f1_score": 0.7177153110962218,
+          "params": {
+            "num_filters": 16,
+            "padding": 0,
+            "stride": 1,
+            "pool_type": "max",
+            "use_1x1": false
+          }
+        },
+        {
+          "name": "stride_2",
+          "accuracy": 0.69,
+          "precision": 0.7011181471180816,
+          "recall": 0.6938476303147152,
+          "f1_score": 0.6724905476970832,
+          "params": {
+            "num_filters": 16,
+            "padding": 1,
+            "stride": 2,
+            "pool_type": "max",
+            "use_1x1": false
+          }
+        },
+        {
+          "name": "avg_pool",
+          "accuracy": 0.682,
+          "precision": 0.7507742250384923,
+          "recall": 0.6835928579328969,
+          "f1_score": 0.6807890308995467,
+          "params": {
+            "num_filters": 16,
+            "padding": 1,
+            "stride": 1,
+            "pool_type": "avg",
+            "use_1x1": false
+          }
+        },
+        {
+          "name": "more_filters",
+          "accuracy": 0.748,
+          "precision": 0.7301468784133508,
+          "recall": 0.7478354403707586,
+          "f1_score": 0.7279085835622509,
+          "params": {
+            "num_filters": 32,
+            "padding": 1,
+            "stride": 1,
+            "pool_type": "max",
+            "use_1x1": false
+          }
+        },
+        {
+          "name": "with_1x1",
+          "accuracy": 0.696,
+          "precision": 0.6986809340781686,
+          "recall": 0.695295227918342,
+          "f1_score": 0.6736704429083228,
+          "params": {
+            "num_filters": 16,
+            "padding": 1,
+            "stride": 1,
+            "pool_type": "max",
+            "use_1x1": true
+          }
+        }
+      ],
+      "baseline_metrics": {
+        "accuracy": 0.883,
+        "precision": 0.8949049550498522,
+        "recall": 0.8885915565229376,
+        "f1_score": 0.8882828773354969
+      },
+      "feature_maps": "C:\\Users\\lenovo\\Downloads\\DL_Project_2\\dl_multi_agents_project\\outputs\\part2_cnn\\part2_cnn\\figures\\feature_maps.png",
+      "mlp_vs_cnn": "C:\\Users\\lenovo\\Downloads\\DL_Project_2\\dl_multi_agents_project\\outputs\\part2_cnn\\part2_cnn\\figures\\mlp_vs_cnn.png",
+      "ablation_png": "C:\\Users\\lenovo\\Downloads\\DL_Project_2\\dl_multi_agents_project\\outputs\\part2_cnn\\part2_cnn\\figures\\ablation.png",
+      "confusion_png": "C:\\Users\\lenovo\\Downloads\\DL_Project_2\\dl_multi_agents_project\\outputs\\part2_cnn\\part2_cnn\\figures\\confusion_matrix.png"
+    },
+    "part3_rnn": {
+      "part": "part3_rnn",
+      "status": "success",
+      "device": "cpu",
+      "models": {
+        "RNN": {
+          "accuracy_mean": 0.9993333333333334,
+          "accuracy_std": 0.0009428090415820641,
+          "train_time_mean": 131.34175283337632,
+          "train_time_std": 28.22108896688215,
+          "memory_delta_mean": -0.0006666666666666673,
+          "memory_score_mean": 0.9986666666666667
+        },
+        "LSTM": {
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "train_time_mean": 31.33349289977923,
+          "train_time_std": 6.058057507899544,
+          "memory_delta_mean": 0.0,
+          "memory_score_mean": 1.0
+        },
+        "GRU": {
+          "accuracy_mean": 1.0,
+          "accuracy_std": 0.0,
+          "train_time_mean": 42.74850416649133,
+          "train_time_std": 6.852074228142314,
+          "memory_delta_mean": 0.0,
+          "memory_score_mean": 1.0
+        }
+      },
+      "perplexity_demo": 494.610998096945,
+      "grad_clip_png": "C:\\Users\\lenovo\\Downloads\\DL_Project_2\\dl_multi_agents_project\\outputs\\part3_rnn\\part3_rnn\\figures\\grad_clip.png",
+      "models_comparison_png": "C:\\Users\\lenovo\\Downloads\\DL_Project_2\\dl_multi_agents_project\\outputs\\part3_rnn\\part3_rnn\\figures\\models_comparison.png",
+      "seq2seq_examples": "C:\\Users\\lenovo\\Downloads\\DL_Project_2\\dl_multi_agents_project\\outputs\\part3_rnn\\part3_rnn\\analysis\\seq2seq_examples.json",
+      "avg_bleu_greedy": 0.19496718264143514,
+      "avg_bleu_beam": 0.19266365728295065
+    }
+  }
+}

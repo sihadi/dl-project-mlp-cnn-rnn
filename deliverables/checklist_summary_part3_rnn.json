@@ -1,0 +1,37 @@
+{
+  "part": "part3_rnn",
+  "status": "success",
+  "device": "cpu",
+  "models": {
+    "RNN": {
+      "accuracy_mean": 0.9993333333333334,
+      "accuracy_std": 0.0009428090415820641,
+      "train_time_mean": 131.34175283337632,
+      "train_time_std": 28.22108896688215,
+      "memory_delta_mean": -0.0006666666666666673,
+      "memory_score_mean": 0.9986666666666667
+    },
+    "LSTM": {
+      "accuracy_mean": 1.0,
+      "accuracy_std": 0.0,
+      "train_time_mean": 31.33349289977923,
+      "train_time_std": 6.058057507899544,
+      "memory_delta_mean": 0.0,
+      "memory_score_mean": 1.0
+    },
+    "GRU": {
+      "accuracy_mean": 1.0,
+      "accuracy_std": 0.0,
+      "train_time_mean": 42.74850416649133,
+      "train_time_std": 6.852074228142314,
+      "memory_delta_mean": 0.0,
+      "memory_score_mean": 1.0
+    }
+  },
+  "perplexity_demo": 494.610998096945,
+  "grad_clip_png": "C:\\Users\\lenovo\\Downloads\\DL_Project_2\\dl_multi_agents_project\\outputs\\part3_rnn\\part3_rnn\\figures\\grad_clip.png",
+  "models_comparison_png": "C:\\Users\\lenovo\\Downloads\\DL_Project_2\\dl_multi_agents_project\\outputs\\part3_rnn\\part3_rnn\\figures\\models_comparison.png",
+  "seq2seq_examples": "C:\\Users\\lenovo\\Downloads\\DL_Project_2\\dl_multi_agents_project\\outputs\\part3_rnn\\part3_rnn\\analysis\\seq2seq_examples.json",
+  "avg_bleu_greedy": 0.19496718264143514,
+  "avg_bleu_beam": 0.19266365728295065
+}

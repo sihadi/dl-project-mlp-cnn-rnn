@@ -1,0 +1,528 @@
+{
+  "part": "part1_mlp",
+  "status": "success",
+  "device": "cpu",
+  "best_variant": "sequential",
+  "best_strategy": "xavier",
+  "metrics": {
+    "part": "part1_mlp",
+    "device": "cpu",
+    "model_variants": [
+      "custom",
+      "sequential"
+    ],
+    "best_strategy": "xavier",
+    "best_variant": "sequential",
+    "validation_accuracy": 0.978021978021978,
+    "accuracy": 0.9473684210526315,
+    "precision": 0.9459459459459459,
+    "recall": 0.9722222222222222,
+    "f1_score": 0.958904109589041,
+    "strategy_results": [
+      {
+        "variant": "custom",
+        "strategy": "gaussian",
+        "val_accuracy": 0.967032967032967,
+        "model_path": "C:\\Users\\lenovo\\Downloads\\DL_Project_2\\dl_multi_agents_project\\outputs\\part1_mlp\\saved_models\\custom_gaussian.pt",
+        "parameter_summary": {
+          "named_parameters": [
+            {
+              "name": "fc1.weight",
+              "shape": [
+                64,
+                30
+              ],
+              "requires_grad": true,
+              "numel": 1920
+            },
+            {
+              "name": "fc1.bias",
+              "shape": [
+                64
+              ],
+              "requires_grad": true,
+              "numel": 64
+            },
+            {
+              "name": "fc2.weight",
+              "shape": [
+                32,
+                64
+              ],
+              "requires_grad": true,
+              "numel": 2048
+            },
+            {
+              "name": "fc2.bias",
+              "shape": [
+                32
+              ],
+              "requires_grad": true,
+              "numel": 32
+            },
+            {
+              "name": "fc3.weight",
+              "shape": [
+                2,
+                32
+              ],
+              "requires_grad": true,
+              "numel": 64
+            },
+            {
+              "name": "fc3.bias",
+              "shape": [
+                2
+              ],
+              "requires_grad": true,
+              "numel": 2
+            }
+          ],
+          "state_dict_keys": [
+            "fc1.weight",
+            "fc1.bias",
+            "fc2.weight",
+            "fc2.bias",
+            "fc3.weight",
+            "fc3.bias"
+          ],
+          "total_params": 4130,
+          "trainable_params": 4130
+        }
+      },
+      {
+        "variant": "custom",
+        "strategy": "constant",
+        "val_accuracy": 0.967032967032967,
+        "model_path": "C:\\Users\\lenovo\\Downloads\\DL_Project_2\\dl_multi_agents_project\\outputs\\part1_mlp\\saved_models\\custom_constant.pt",
+        "parameter_summary": {
+          "named_parameters": [
+            {
+              "name": "fc1.weight",
+              "shape": [
+                64,
+                30
+              ],
+              "requires_grad": true,
+              "numel": 1920
+            },
+            {
+              "name": "fc1.bias",
+              "shape": [
+                64
+              ],
+              "requires_grad": true,
+              "numel": 64
+            },
+            {
+              "name": "fc2.weight",
+              "shape": [
+                32,
+                64
+              ],
+              "requires_grad": true,
+              "numel": 2048
+            },
+            {
+              "name": "fc2.bias",
+              "shape": [
+                32
+              ],
+              "requires_grad": true,
+              "numel": 32
+            },
+            {
+              "name": "fc3.weight",
+              "shape": [
+                2,
+                32
+              ],
+              "requires_grad": true,
+              "numel": 64
+            },
+            {
+              "name": "fc3.bias",
+              "shape": [
+                2
+              ],
+              "requires_grad": true,
+              "numel": 2
+            }
+          ],
+          "state_dict_keys": [
+            "fc1.weight",
+            "fc1.bias",
+            "fc2.weight",
+            "fc2.bias",
+            "fc3.weight",
+            "fc3.bias"
+          ],
+          "total_params": 4130,
+          "trainable_params": 4130
+        }
+      },
+      {
+        "variant": "custom",
+        "strategy": "xavier",
+        "val_accuracy": 0.945054945054945,
+        "model_path": "C:\\Users\\lenovo\\Downloads\\DL_Project_2\\dl_multi_agents_project\\outputs\\part1_mlp\\saved_models\\custom_xavier.pt",
+        "parameter_summary": {
+          "named_parameters": [
+            {
+              "name": "fc1.weight",
+              "shape": [
+                64,
+                30
+              ],
+              "requires_grad": true,
+              "numel": 1920
+            },
+            {
+              "name": "fc1.bias",
+              "shape": [
+                64
+              ],
+              "requires_grad": true,
+              "numel": 64
+            },
+            {
+              "name": "fc2.weight",
+              "shape": [
+                32,
+                64
+              ],
+              "requires_grad": true,
+              "numel": 2048
+            },
+            {
+              "name": "fc2.bias",
+              "shape": [
+                32
+              ],
+              "requires_grad": true,
+              "numel": 32
+            },
+            {
+              "name": "fc3.weight",
+              "shape": [
+                2,
+                32
+              ],
+              "requires_grad": true,
+              "numel": 64
+            },
+            {
+              "name": "fc3.bias",
+              "shape": [
+                2
+              ],
+              "requires_grad": true,
+              "numel": 2
+            }
+          ],
+          "state_dict_keys": [
+            "fc1.weight",
+            "fc1.bias",
+            "fc2.weight",
+            "fc2.bias",
+            "fc3.weight",
+            "fc3.bias"
+          ],
+          "total_params": 4130,
+          "trainable_params": 4130
+        }
+      },
+      {
+        "variant": "sequential",
+        "strategy": "gaussian",
+        "val_accuracy": 0.9560439560439561,
+        "model_path": "C:\\Users\\lenovo\\Downloads\\DL_Project_2\\dl_multi_agents_project\\outputs\\part1_mlp\\saved_models\\sequential_gaussian.pt",
+        "parameter_summary": {
+          "named_parameters": [
+            {
+              "name": "net.0.weight",
+              "shape": [
+                64,
+                30
+              ],
+              "requires_grad": true,
+              "numel": 1920
+            },
+            {
+              "name": "net.0.bias",
+              "shape": [
+                64
+              ],
+              "requires_grad": true,
+              "numel": 64
+            },
+            {
+              "name": "net.2.weight",
+              "shape": [
+                32,
+                64
+              ],
+              "requires_grad": true,
+              "numel": 2048
+            },
+            {
+              "name": "net.2.bias",
+              "shape": [
+                32
+              ],
+              "requires_grad": true,
+              "numel": 32
+            },
+            {
+              "name": "net.4.weight",
+              "shape": [
+                2,
+                32
+              ],
+              "requires_grad": true,
+              "numel": 64
+            },
+            {
+              "name": "net.4.bias",
+              "shape": [
+                2
+              ],
+              "requires_grad": true,
+              "numel": 2
+            }
+          ],
+          "state_dict_keys": [
+            "net.0.weight",
+            "net.0.bias",
+            "net.2.weight",
+            "net.2.bias",
+            "net.4.weight",
+            "net.4.bias"
+          ],
+          "total_params": 4130,
+          "trainable_params": 4130
+        }
+      },
+      {
+        "variant": "sequential",
+        "strategy": "constant",
+        "val_accuracy": 0.967032967032967,
+        "model_path": "C:\\Users\\lenovo\\Downloads\\DL_Project_2\\dl_multi_agents_project\\outputs\\part1_mlp\\saved_models\\sequential_constant.pt",
+        "parameter_summary": {
+          "named_parameters": [
+            {
+              "name": "net.0.weight",
+              "shape": [
+                64,
+                30
+              ],
+              "requires_grad": true,
+              "numel": 1920
+            },
+            {
+              "name": "net.0.bias",
+              "shape": [
+                64
+              ],
+              "requires_grad": true,
+              "numel": 64
+            },
+            {
+              "name": "net.2.weight",
+              "shape": [
+                32,
+                64
+              ],
+              "requires_grad": true,
+              "numel": 2048
+            },
+            {
+              "name": "net.2.bias",
+              "shape": [
+                32
+              ],
+              "requires_grad": true,
+              "numel": 32
+            },
+            {
+              "name": "net.4.weight",
+              "shape": [
+                2,
+                32
+              ],
+              "requires_grad": true,
+              "numel": 64
+            },
+            {
+              "name": "net.4.bias",
+              "shape": [
+                2
+              ],
+              "requires_grad": true,
+              "numel": 2
+            }
+          ],
+          "state_dict_keys": [
+            "net.0.weight",
+            "net.0.bias",
+            "net.2.weight",
+            "net.2.bias",
+            "net.4.weight",
+            "net.4.bias"
+          ],
+          "total_params": 4130,
+          "trainable_params": 4130
+        }
+      },
+      {
+        "variant": "sequential",
+        "strategy": "xavier",
+        "val_accuracy": 0.978021978021978,
+        "model_path": "C:\\Users\\lenovo\\Downloads\\DL_Project_2\\dl_multi_agents_project\\outputs\\part1_mlp\\saved_models\\sequential_xavier.pt",
+        "parameter_summary": {
+          "named_parameters": [
+            {
+              "name": "net.0.weight",
+              "shape": [
+                64,
+                30
+              ],
+              "requires_grad": true,
+              "numel": 1920
+            },
+            {
+              "name": "net.0.bias",
+              "shape": [
+                64
+              ],
+              "requires_grad": true,
+              "numel": 64
+            },
+            {
+              "name": "net.2.weight",
+              "shape": [
+                32,
+                64
+              ],
+              "requires_grad": true,
+              "numel": 2048
+            },
+            {
+              "name": "net.2.bias",
+              "shape": [
+                32
+              ],
+              "requires_grad": true,
+              "numel": 32
+            },
+            {
+              "name": "net.4.weight",
+              "shape": [
+                2,
+                32
+              ],
+              "requires_grad": true,
+              "numel": 64
+            },
+            {
+              "name": "net.4.bias",
+              "shape": [
+                2
+              ],
+              "requires_grad": true,
+              "numel": 2
+            }
+          ],
+          "state_dict_keys": [
+            "net.0.weight",
+            "net.0.bias",
+            "net.2.weight",
+            "net.2.bias",
+            "net.4.weight",
+            "net.4.bias"
+          ],
+          "total_params": 4130,
+          "trainable_params": 4130
+        }
+      }
+    ]
+  },
+  "parameter_report": {
+    "named_parameters": [
+      {
+        "name": "net.0.weight",
+        "shape": [
+          64,
+          30
+        ],
+        "requires_grad": true,
+        "numel": 1920
+      },
+      {
+        "name": "net.0.bias",
+        "shape": [
+          64
+        ],
+        "requires_grad": true,
+        "numel": 64
+      },
+      {
+        "name": "net.2.weight",
+        "shape": [
+          32,
+          64
+        ],
+        "requires_grad": true,
+        "numel": 2048
+      },
+      {
+        "name": "net.2.bias",
+        "shape": [
+          32
+        ],
+        "requires_grad": true,
+        "numel": 32
+      },
+      {
+        "name": "net.4.weight",
+        "shape": [
+          2,
+          32
+        ],
+        "requires_grad": true,
+        "numel": 64
+      },
+      {
+        "name": "net.4.bias",
+        "shape": [
+          2
+        ],
+        "requires_grad": true,
+        "numel": 2
+      }
+    ],
+    "state_dict_keys": [
+      "net.0.weight",
+      "net.0.bias",
+      "net.2.weight",
+      "net.2.bias",
+      "net.4.weight",
+      "net.4.bias"
+    ],
+    "total_params": 4130,
+    "trainable_params": 4130
+  },
+  "confusion_png": "C:\\Users\\lenovo\\Downloads\\DL_Project_2\\dl_multi_agents_project\\outputs\\part1_mlp\\figures\\confusion_matrix.png",
+  "metrics_summary_png": "C:\\Users\\lenovo\\Downloads\\DL_Project_2\\dl_multi_agents_project\\outputs\\part1_mlp\\figures\\metrics_summary.png",
+  "initialization_png": "C:\\Users\\lenovo\\Downloads\\DL_Project_2\\dl_multi_agents_project\\outputs\\part1_mlp\\figures\\initialization_comparison.png",
+  "lime_png": "C:\\Users\\lenovo\\Downloads\\DL_Project_2\\dl_multi_agents_project\\outputs\\part1_mlp\\figures\\lime_explanation.png",
+  "lime_html": "C:\\Users\\lenovo\\Downloads\\DL_Project_2\\dl_multi_agents_project\\outputs\\part1_mlp\\figures\\lime_explanation.html",
+  "train_summary": {
+    "part": "part1_mlp",
+    "status": "success",
+    "best_strategy": "xavier",
+    "best_variant": "sequential",
+    "accuracy": 0.9473684210526315,
+    "output_dir": "C:\\Users\\lenovo\\Downloads\\DL_Project_2\\dl_multi_agents_project\\outputs\\part1_mlp"
+  }
+}

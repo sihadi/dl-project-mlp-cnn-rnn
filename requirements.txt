@@ -1,0 +1,12 @@
+torch
+torchvision
+numpy
+scikit-learn
+scikit-image
+lime
+datasets
+matplotlib
+jupyter
+fpdf2
+nbclient
+nbformat
