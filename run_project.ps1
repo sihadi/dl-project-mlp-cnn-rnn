@@ -13,23 +13,13 @@ if (-not (Test-Path $Python)) {
 
 Set-Location $Root
 
-Write-Host "`n=== 1/4 Installation des dépendances ===" -ForegroundColor Cyan
+Write-Host "`n=== 1/3 Installation des dépendances ===" -ForegroundColor Cyan
 & $Python -m pip install -r requirements.txt -q
 
-Write-Host "`n=== 2/4 Exécution des 3 parties (MLP, CNN, RNN) ===" -ForegroundColor Cyan
+Write-Host "`n=== 2/3 Exécution des 3 parties + collecte ===" -ForegroundColor Cyan
 Write-Host "Patience: ~15 min sur CPU..." -ForegroundColor Yellow
 $env:PYTHONUNBUFFERED = "1"
-& $Python deliverables\run_all_and_collect.py
-if ($LASTEXITCODE -ne 0) { throw "Echec run_all_and_collect.py" }
-
-Write-Host "`n=== 3/4 Génération rapport HTML + PDF ===" -ForegroundColor Cyan
-& $Python deliverables\generate_report_html.py
-& $Python deliverables\make_pdf_from_report_and_figures.py
-
-Write-Host "`n=== 4/4 Création archive ZIP ===" -ForegroundColor Cyan
-& $Python package_submission.py --skip-run
+& $Python package_submission.py
 
 Write-Host "`n=== TERMINÉ ===" -ForegroundColor Green
-Write-Host "Rapport PDF : deliverables\report_generated.pdf"
-Write-Host "Archive     : deliverables\submission_final_new.zip"
-Write-Host "Log         : deliverables\last_run.log"
+Write-Host "Archive à remettre : deliverables\submission_final_new.zip"

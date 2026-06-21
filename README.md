@@ -47,15 +47,8 @@ Sequential text classification and generation.
 
 ### Deliverables
 
-- `deliverables/report.md`: scientific report.
-- `deliverables/appendix.md`: technical appendix.
-- `deliverables/report.html`: HTML version of the report.
-- `deliverables/report_generated.pdf`: PDF version of the report.
-- `deliverables/figures/`: copied figures for submission.
-- `deliverables/analysis/`: collected JSON analyses.
-- `deliverables/submission_notebook.ipynb`: packaging notebook.
-- `deliverables/submission_notebook_executed.ipynb`: executed notebook.
-- `deliverables/submission_final.zip`: final archive to submit.
+- `deliverables/submission_final_new.zip` : **archive unique à remettre** (rapport, code, figures, métriques).
+- Contenu local regénéré par `run_all_and_collect.py` : `figures/`, `analysis/` (non versionnés sur GitHub).
 
 ## Scientific answers
 
@@ -108,39 +101,26 @@ cd dl_multi_agents_project
 python -m pip install -r requirements.txt
 ```
 
-Run the full validation pipeline (≈15 min on CPU):
-
-```powershell
-python deliverables/run_all_and_collect.py
-```
-
-Generate reports and submission archive:
-
-```powershell
-python deliverables/generate_report_html.py
-python deliverables/make_pdf_from_report_and_figures.py
-python package_submission.py --skip-run
-```
-
-Or run everything in one step (re-runs validators):
+Run the full validation pipeline and build the submission ZIP (≈15 min on CPU):
 
 ```powershell
 python package_submission.py
+```
+
+Or step by step:
+
+```powershell
+python deliverables/run_all_and_collect.py
+python package_submission.py --skip-run
 ```
 
 **Note for the evaluator** : Internet is required on first run to download Fashion-MNIST and IMDb. GPU is optional (`cuda` used automatically if available).
 
 ## Recommended submission files
 
-For submission, the essential files are:
-- `deliverables/submission_final.zip`
-- `deliverables/report_generated.pdf`
-- `deliverables/report.html`
-
-Optional supporting files:
-- `deliverables/submission_notebook.ipynb`
-- `deliverables/submission_notebook_executed.ipynb`
-- `deliverables/appendix.md`
+**À remettre :**
+- `deliverables/submission_final_new.zip`
+- Lien GitHub : https://github.com/sihadi/dl-project-mlp-cnn-rnn
 
 ## Notes on the report
 The report should be written in a clear academic style and should interpret every figure and metric in relation to its corresponding part. In particular:

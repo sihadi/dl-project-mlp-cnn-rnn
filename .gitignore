@@ -17,11 +17,18 @@ data/
 # Sorties intermédiaires (regénérées par run_all_and_collect.py)
 outputs/
 
+# Livrables locaux — seul le ZIP est versionné sur GitHub
+deliverables/*
+!deliverables/submission_final_new.zip
+!deliverables/run_all_and_collect.py
+
+# Rapports générés (supprimés — contenus dans le ZIP)
+deliverables/report.html
+deliverables/report_generated.*
+deliverables/*.docx
+
 # Logs locaux
 deliverables/last_run.log
-
-# Archives dupliquées (garder submission_final_new.zip si présent)
-deliverables/submission_final.zip
 
 # OS / IDE
 .DS_Store

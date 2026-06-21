@@ -7,6 +7,5 @@ lime
 datasets
 matplotlib
 jupyter
-fpdf2
 nbclient
 nbformat
